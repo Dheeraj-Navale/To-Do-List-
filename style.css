@@ -99,6 +99,12 @@ ul li span{
     line-height: 40px;
     text-align: center;
 }
+ul li span img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 ul li span:hover{
     background:#59fbf3 ;
     border-radius: 50%;

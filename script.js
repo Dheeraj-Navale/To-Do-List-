@@ -16,7 +16,7 @@ function addTask() {
 
     // Create delete button (×)
     let span = document.createElement("span");
-    span.innerHTML = "\u00d7";
+    span.innerHTML = '<img src="images/delete.png" alt="Delete">';
     li.appendChild(span);
 
     // Clear input box
@@ -36,8 +36,8 @@ listContainer.addEventListener("click", function (e) {
     }
 
     // Delete task
-    else if (e.target.tagName === "SPAN") {
-        e.target.parentElement.remove();
+    else if (e.target.tagName === "SPAN" || e.target.tagName === "IMG" ){
+       e.target.closest("li").remove();
         saveData();
     }
 
